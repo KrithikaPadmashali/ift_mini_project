@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branch and Account Manager</title>
+</head>
+<body>
+    <h1>Branch and Account Management</h1>
+
+    <h2>Create Branch</h2>
+    <input type="text" id="branchName" placeholder="Branch Name">
+    <input type="number" id="branchRate" placeholder="Rate">
+    <input type="number" id="parentId" placeholder="Parent Branch ID (optional)">
+    <button onclick="createBranch()">Create Branch</button>
+
+    <h2>Create Account</h2>
+    <input type="text" id="accountName" placeholder="Account Name">
+    <input type="number" id="branchIdForAccount" placeholder="Branch ID">
+    <button onclick="createAccount()">Create Account</button>
+
+    <h2>Update Branch Rate</h2>
+    <input type="number" id="rateBranchId" placeholder="Branch ID">
+    <input type="number" id="newRate" placeholder="New Rate">
+    <button onclick="updateRate()">Update Rate</button>
+
+    <h2>All Branches</h2>
+    <button onclick="getBranches()">View Branches</button>
+    <pre id="branchesOutput"></pre>
+
+    <h2>All Accounts</h2>
+    <button onclick="getAccounts()">View Accounts</button>
+    <pre id="accountsOutput"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
